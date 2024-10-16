@@ -1,0 +1,9 @@
+package com.mycompany.config;
+
+public class MyDataSourcePriperties {
+	private String driverClass;
+	private String url;
+	private String username;
+	private String password;
+
+}

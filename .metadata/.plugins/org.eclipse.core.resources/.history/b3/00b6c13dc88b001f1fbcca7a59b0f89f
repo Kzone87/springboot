@@ -1,0 +1,13 @@
+package com.mycompany.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.ApplicationRunner;
+import org.springframework.stereotype.Service;
+
+@Service
+public class BoardService implements ApplicationRunner {
+
+	@Autowired
+	private MyDataSource datasource;
+	
+}

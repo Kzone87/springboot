@@ -1,0 +1,4 @@
+spring.application.name=HelloBoot
+
+## WebApplicationType 설정
+#spring.main.web-application-type=none

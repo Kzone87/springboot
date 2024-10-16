@@ -1,0 +1,5 @@
+package com.mycompany.config;
+
+public class BoardAutoConfiguration {
+
+}

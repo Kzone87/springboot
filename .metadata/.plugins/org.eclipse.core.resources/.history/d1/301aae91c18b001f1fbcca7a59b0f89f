@@ -1,0 +1,5 @@
+package com.mycompany.jdbc;
+
+public class MyDataSource {
+
+}

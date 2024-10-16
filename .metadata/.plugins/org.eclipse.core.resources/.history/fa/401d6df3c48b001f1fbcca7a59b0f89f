@@ -1,0 +1,19 @@
+package com.mycompany.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import com.mycompany.jdbc.MyDataSource;
+
+@Configuration
+public class BoardAutoConfiguration {
+	
+	@Bean
+	public MyDataSource getMyDatasource() {
+		MyDataSource datasource = new MyDataSource();
+		datasource.set
+		
+		return datasource;
+	}
+	
+}
