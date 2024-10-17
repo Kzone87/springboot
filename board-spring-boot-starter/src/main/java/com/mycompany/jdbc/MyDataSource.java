@@ -1,9 +1,7 @@
 package com.mycompany.jdbc;
 
-import lombok.Data;
-
-@Data
 public class MyDataSource {
+	
 	private String driverClass;
 	private String url;
 	private String username;
@@ -44,7 +42,13 @@ public class MyDataSource {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	
+
+	@Override
+	public String toString() {
+		return "MyDataSource [driverClass=" + driverClass + ", url=" + url + ", username=" + username + ", password="
+				+ password + "]";
+	}
+
 	
 	
 }

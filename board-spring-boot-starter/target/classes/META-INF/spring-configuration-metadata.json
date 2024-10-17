@@ -1,0 +1,32 @@
+{
+  "groups": [
+    {
+      "name": "board.jdbc",
+      "type": "com.mycompany.config.MyDataSourceProperties",
+      "sourceType": "com.mycompany.config.MyDataSourceProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "board.jdbc.driver-class",
+      "type": "java.lang.String",
+      "sourceType": "com.mycompany.config.MyDataSourceProperties"
+    },
+    {
+      "name": "board.jdbc.password",
+      "type": "java.lang.String",
+      "sourceType": "com.mycompany.config.MyDataSourceProperties"
+    },
+    {
+      "name": "board.jdbc.url",
+      "type": "java.lang.String",
+      "sourceType": "com.mycompany.config.MyDataSourceProperties"
+    },
+    {
+      "name": "board.jdbc.username",
+      "type": "java.lang.String",
+      "sourceType": "com.mycompany.config.MyDataSourceProperties"
+    }
+  ],
+  "hints": []
+}

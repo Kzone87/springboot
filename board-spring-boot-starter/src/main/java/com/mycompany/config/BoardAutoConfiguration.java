@@ -1,22 +1,27 @@
 package com.mycompany.config;
 
-import org.springframework.boot.autoconfigure.AutoConfiguration;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import com.mycompany.jdbc.MyDataSource;
 
-@AutoConfiguration
+@Configuration
+@EnableConfigurationProperties(MyDataSourceProperties.class)
 public class BoardAutoConfiguration {
 	
+	@Autowired
+	private MyDataSourceProperties properties;
+	
 	@Bean
-	public MyDataSource getMyDatasource() {
+	public MyDataSource getMyDataSource() {
 		MyDataSource datasource = new MyDataSource();
-		datasource.setDriverClass("oracle.jdbc.driver.OracleDriver");
-		datasource.setUrl("jdbc:oracle:thin:@localhost:1521:xe");
-		datasource.setUsername("hr");
-		datasource.setPassword("hr");
+		datasource.setDriverClass(properties.getDriverClass());
+		datasource.setUrl(properties.getUrl());
+		datasource.setUsername(properties.getUsername());
+		datasource.setPassword(properties.getPassword());
 		return datasource;
 	}
-	
+
 }
